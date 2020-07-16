@@ -2,14 +2,15 @@
 const express = require('express');
 const DBFactory = require('./db');
 
-
 const app = express();
 app.use(express.json());
 
-app.use(function (req, res, next) {
-  res.removeHeader("X-Powered-By");
-  next();
-});
+app.disable('x-powered-by');
+
+// app.use(function (req, res, next) {
+//   res.removeHeader("X-Powered-By");
+//   next();
+// });
 
 const db = DBFactory();
 
