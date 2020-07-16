@@ -1,0 +1,27 @@
+GET http://localhost:8080/api/data
+
+###
+
+GET http://localhost:8080/api/data/teste
+
+###
+
+POST http://localhost:8080/api/data
+Content-Type: application/json
+
+{
+    "key" : "teste",
+    "value" : "any_value"
+}
+
+###
+PUT http://localhost:8080/api/data/teste
+Content-Type: application/json
+
+{
+    "key" : "teste",
+    "value" : "any_other_value"
+}
+
+###
+DELETE http://localhost:8080/api/data/teste

@@ -1,0 +1,20 @@
+{
+  "name": "api2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "server": "nodemon ./src/index.js",
+    "test": "./node_modules/.bin/jest --silent --passWithNoTests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "jest": "^26.1.0"
+  }
+}

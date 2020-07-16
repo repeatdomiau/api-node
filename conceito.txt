@@ -1,0 +1,19 @@
+client -> Request -> server
+client <- Response <- server
+Method | URL
+URL -> Recurso
+GET -> Lista ou Único -> Não tem corpo
+POST -> Inserir -> Corpo (dado)
+PUT -> Alterar -> Corpo (dado) (objeto completo)
+PATCH -> Alterar -> Corpo (dado) (props que precisam ser alteradas)
+DELETE -> Remover -> Não tem corpo
+StatusCode -> 
+200 OK
+201 Created
+400 Bad Request
+404 Not Found
+409 Conflict
+500 Internal Server Error
+
+//npm i nodemon -g
+
